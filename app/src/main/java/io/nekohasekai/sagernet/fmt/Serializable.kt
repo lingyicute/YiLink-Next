@@ -1,6 +1,6 @@
 /******************************************************************************
  * *
- * Copyright (C) 2021 by nekohasekai <sekai></sekai>@neko.services>                    *
+ * Copyright (C) 2025 by lingyicute <sekai></sekai>@neko.services>                    *
  * Copyright (C) 2021 by Max Lv <max.c.lv></max.c.lv>@gmail.com>                          *
  * Copyright (C) 2021 by Mygod Studio <contact-shadowsocks-android></contact-shadowsocks-android>@mygod.be>  *
  * *

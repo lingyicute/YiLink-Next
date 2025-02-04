@@ -1,6 +1,6 @@
 /******************************************************************************
  *                                                                            *
- * Copyright (C) 2021 by nekohasekai <contact-sagernet@sekai.icu>             *
+ * Copyright (C) 2025 by lingyicute <li@92li.us.kg>             *
  *                                                                            *
  * This program is free software: you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -53,7 +53,7 @@ object Theme {
 
     const val DYNAMIC = 21
 
-    private fun defaultTheme() = PINK
+    private fun defaultTheme() = BLUE
 
     fun apply(context: Context) {
         context.setTheme(getTheme())
