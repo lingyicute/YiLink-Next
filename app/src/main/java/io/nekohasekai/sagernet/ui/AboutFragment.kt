@@ -1,6 +1,6 @@
 /******************************************************************************
  *                                                                            *
- * Copyright (C) 2021 by nekohasekai <contact-sagernet@sekai.icu>             *
+ * Copyright (C) 2025 by lingyicute <li@92li.us.kg>             *
  *                                                                            *
  * This program is free software: you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -180,16 +180,6 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                                     .build())
                             }
                         }
-                        addItem(MaterialAboutActionItem.Builder()
-                            .icon(R.drawable.ic_baseline_card_giftcard_24)
-                            .text(R.string.donate_to_original_author)
-                            .subText(R.string.donate_info)
-                            .setOnClickAction {
-                                requireContext().launchCustomTab(
-                                    "https://sekai.icu/sponsors/"
-                                )
-                            }
-                            .build())
                     }
                     .build())
                 .addCard(MaterialAboutCard.Builder()

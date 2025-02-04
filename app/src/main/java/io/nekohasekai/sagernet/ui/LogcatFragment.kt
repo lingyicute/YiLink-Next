@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2021 by nekohasekai <contact-git@sekai.icu>                  *
+ * Copyright (C) 2025 by lingyicute <contact-git@sekai.icu>                  *
  *                                                                            *
  * This program is free software: you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
