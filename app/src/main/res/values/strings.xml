@@ -190,7 +190,7 @@
     <string name="action_vless" translatable="false">VLESS</string>
     <string name="action_trojan" translatable="false">Trojan</string>
     <string name="action_trojan_go" translatable="false">Trojan Go</string>
-    <string name="action_naive" translatable="false">Naïve</string>
+    <string name="action_naive" translatable="false">Naive</string>
     <string name="action_brook" translatable="false">Brook</string>
     <string name="action_hysteria" translatable="false">Hysteria</string>
     <string name="action_hysteria2" translatable="false">Hysteria 2</string>
