@@ -196,8 +196,8 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                         }
                         .build())
                     .addItem(MaterialAboutActionItem.Builder()
-                        .icon(R.drawable.public_24)
-                        .text(R.string.li_web)
+                        .icon(R.drawable.public_24px)
+                        .text(R.string.liweb)
                         .setOnClickAction {
                             requireContext().launchCustomTab(
                                 "https://92li.us.kg"
