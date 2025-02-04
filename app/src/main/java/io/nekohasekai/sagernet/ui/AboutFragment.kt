@@ -130,11 +130,11 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                         .build())
                     .addItem(MaterialAboutActionItem.Builder()
                         .icon(R.drawable.ic_baseline_airplanemode_active_24)
-                        .text(getString(R.string.version_x, "v2ray-core"))
+                        .text(R.string.version_core)
                         .subText("v" + Libcore.getV2RayVersion())
                         .setOnClickAction {
                             requireContext().launchCustomTab(
-                                "https://github.com/dyhkwong/v2ray-core/tree/dev-sagernet"
+                                "https://github.com/v2fly/v2ray-core"
                             )
                         }
                         .build())
