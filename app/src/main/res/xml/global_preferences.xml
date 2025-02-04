@@ -324,7 +324,7 @@
             app:key="httpProxyException"
             app:title="@string/http_proxy_exception_list" />
         <SwitchPreference
-            app:icon="@drawable/ic_baseline_transgender_24"
+            app:icon="@drawable/ic_baseline_texture_24"
             app:key="requireTransproxy"
             app:title="@string/require_transproxy" />
         <EditTextPreference
