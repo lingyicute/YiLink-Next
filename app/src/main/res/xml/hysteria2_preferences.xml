@@ -1,0 +1,97 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        app:icon="@drawable/ic_social_emoji_symbols"
+        app:key="profileName"
+        app:title="@string/profile_name"
+        app:useSimpleSummaryProvider="true" />
+
+    <PreferenceCategory app:title="@string/proxy_cat">
+
+        <EditTextPreference
+            app:icon="@drawable/ic_hardware_router"
+            app:key="serverAddress"
+            app:title="@string/server_address"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_maps_directions_boat"
+            app:key="serverPorts"
+            app:title="@string/server_port"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_settings_password"
+            app:key="serverPassword"
+            app:title="@string/password"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_texture_24"
+            app:key="serverObfs"
+            app:title="@string/hysteria_obfs"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_action_copyright"
+            app:key="serverSNI"
+            app:title="@string/sni"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreference
+            app:icon="@drawable/ic_notification_enhanced_encryption"
+            app:key="serverAllowInsecure"
+            app:summary="@string/allow_insecure_sum"
+            app:title="@string/allow_insecure" />
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_vpn_key_24"
+            app:key="serverCertificates"
+            app:title="@string/certificates"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_file_file_upload"
+            app:key="serverUploadSpeed"
+            app:title="@string/hysteria_upload_mbps"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_download_24"
+            app:key="serverDownloadSpeed"
+            app:title="@string/hysteria_download_mbps"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_flip_camera_android_24"
+            app:key="serverHopInterval"
+            app:title="@string/hysteria_hop_interval"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            app:title="@string/plugin_settings"
+            app:summary="@string/hysteria2_plugin_settings_sum">
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_push_pin_24"
+            app:key="serverPinnedCertificateChain"
+            app:title="@string/sha256_certificate_fingerprint"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_texture_24"
+            app:key="serverInitStreamReceiveWindow"
+            app:title="@string/hysteria_init_stream_receive_window"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_texture_24"
+            app:key="serverMaxStreamReceiveWindow"
+            app:title="@string/hysteria_max_stream_receive_window"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_transform_24"
+            app:key="serverInitConnReceiveWindow"
+            app:title="@string/hysteria_init_conn_receive_window"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_transform_24"
+            app:key="serverMaxConnReceiveWindow"
+            app:title="@string/hysteria_max_conn_receive_window"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreference
+            app:icon="@drawable/ic_baseline_multiple_stop_24"
+            app:key="serverDisableMtuDiscovery"
+            app:title="@string/hysteria_disable_mtu_discovery" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
