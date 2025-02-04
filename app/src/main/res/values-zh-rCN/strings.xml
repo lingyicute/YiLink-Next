@@ -172,6 +172,7 @@
 \n%s</string>
     <string name="deduplication">去重</string>
     <string name="version_x">版本 (%s)</string>
+    <string name="version_core">内核版本</string>
     <string name="ss_cat">Shadowsocks 设置</string>
     <string name="show_direct_speed">显示直连速度</string>
     <string name="show_direct_speed_sum">在通知中显示不经过代理的流量速度</string>
