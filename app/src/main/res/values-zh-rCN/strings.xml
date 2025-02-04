@@ -148,7 +148,7 @@
     <string name="proxy_cat">服务器设置</string>
     <string name="unsaved_changes_prompt">是否要保存修改？</string>
     <string name="apply">应用</string>
-    <string name="license">许可证</string>
+    <string name="license">开源许可</string>
     <string name="route_proxy">代理</string>
     <string name="route_bypass">绕过</string>
     <string name="route_block">屏蔽</string>
@@ -197,7 +197,7 @@
     <string name="file_manager_missing">您的设备缺少 Android 标准文件选择器，请安装一个，如质感文件。</string>
     <string name="restart">重载代理服务以应用修改</string>
     <string name="theme">主题</string>
-    <string name="donate_to_original_author">向原作者捐款</string>
+    <string name="li_web">梨の主页</string>
     <string name="donate">捐款</string>
     <string name="donate_info">世界很可爱 请给世界钱</string>
     <string name="extra_headers">附加头</string>
@@ -207,13 +207,13 @@
     <string name="transproxy_mode">透明代理模式</string>
     <string name="port_transproxy">透明代理端口</string>
     <string name="connection_test_url">连接测试 URL</string>
-    <string name="connection_test_available_http">连接成功：HTTP 握手耗时 %d ms</string>
+    <string name="connection_test_available_http">连接成功！HTTP 握手耗时 %d ms～</string>
     <string name="route_reverse">反向代理</string>
     <string name="route_reverse_redirect">反向代理地址</string>
     <string name="certificates">证书（链）</string>
     <string name="pinned_peer_certificate_chain_sha256">固定证书链散列</string>
-    <string name="ignore_battery_optimizations">忽略电池优化</string>
-    <string name="ignore_battery_optimizations_sum">移除一些限制</string>
+    <string name="ignore_battery_optimizations">允许后台运行</string>
+    <string name="ignore_battery_optimizations_sum">避免代理连接意外中断</string>
     <string name="early_data_header_name">前置数据头名称</string>
     <string name="config_settings">配置设置</string>
     <string name="custom_config">自定义配置</string>

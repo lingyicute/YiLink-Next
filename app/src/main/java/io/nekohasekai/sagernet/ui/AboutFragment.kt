@@ -195,9 +195,17 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                             )
                         }
                         .build())
+                    .addItem(MaterialAboutActionItem.Builder()
+                        .icon(R.drawable.public_24)
+                        .text(R.string.li_web)
+                        .setOnClickAction {
+                            requireContext().launchCustomTab(
+                                "https://92li.us.kg"
+                            )
+                        }
+                        .build())
                     .build())
                 .build()
-
         }
 
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
