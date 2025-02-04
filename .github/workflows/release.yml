@@ -61,11 +61,8 @@ jobs:
           export LOCAL_PROPERTIES="${{ secrets.LOCAL_PROPERTIES }}"
           ./gradlew :app:downloadAssets
           ./gradlew :app:assembleOssRelease
-          APK=$(find app/build/outputs/apk -name '*.apk')
-          APK=$(dirname "$APK")
-          echo "APK=$APK" >> $GITHUB_ENV
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: APKs
-          path: ${{ env.APK }}
+          path: 'app/build/outputs/apk/oss/release/'
