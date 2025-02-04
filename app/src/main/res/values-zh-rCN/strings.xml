@@ -85,7 +85,7 @@
     <string name="bypass_apps">绕过</string>
     <string name="show_system_apps">显示系统应用</string>
     <string name="auto_connect">自动连接</string>
-    <string name="auto_connect_summary">手机启动或更新后代理会自动重新连接</string>
+    <string name="auto_connect_summary">尝试在手机重启后自动连接代理</string>
     <!-- notification category -->
     <string name="service_vpn">VPN 服务</string>
     <string name="service_proxy">代理服务</string>
@@ -189,8 +189,8 @@
     <string name="empty_route">空路由</string>
     <string name="empty_route_notice">在保存前设置一些规则！</string>
     <string name="route_warn">在添加自定义规则之前，请确保您已经阅读了文档，否则您将可能无法连接到网络。</string>
-    <string name="route_bypass_domain">%s 域名规则</string>
-    <string name="route_bypass_ip">%s IP 规则</string>
+    <string name="route_bypass_domain">%s境内域名流转规则</string>
+    <string name="route_bypass_ip">%s境内 IP 流转规则</string>
     <string name="no_proxies_found_in_file">未在此文件内找到服务器配置</string>
     <string name="no_proxies_found_in_clipboard">未在剪贴板内找到服务器配置</string>
     <string name="route_reset">重置</string>
@@ -388,7 +388,7 @@
     <string name="stun_test">NAT 行为发现</string>
     <string name="start">开始</string>
     <string name="stun_attest_loading">这可能需要几分钟的时间……</string>
-    <string name="route_play_store">%s Play 商店规则</string>
+    <string name="route_play_store">%s境内 Google API 流转规则</string>
     <string name="naive_insecure_concurrency">不安全并发</string>
     <string name="naive_insecure_concurrency_summary">使用 N 个并发的隧道连接，在恶劣的网络条件下效果更好，但是并发连接使隧道更容易被发现，安全性降低。以不安全的方式使用它违背了这个项目力求对抗流量分析的目的
 \n
@@ -437,7 +437,7 @@
     <string name="tuic_congestion_controller">拥塞控制</string>
     <string name="tuic_udp_relay_mode">UDP 转发模式</string>
     <string name="tuic_token">令牌</string>
-    <string name="connection_test_url_test">URL 测试</string>
+    <string name="connection_test_url_test">实际连接</string>
     <string name="ooc_subscription_token">OOCv1 API 令牌</string>
     <string name="hysteria_init_stream_receive_window">QUIC 初始流接收窗口</string>
     <string name="hysteria_max_stream_receive_window">QUIC 最大流接收窗口</string>
