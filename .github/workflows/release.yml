@@ -1,0 +1,71 @@
+name: Release Build
+on:
+  push:
+    paths:
+      - "app/**"
+      - "buildSrc/**"
+      - "library/**"
+      - ".github/workflows/release.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Checkout Submodule
+        run: |
+          git submodule update --init library/core
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 1.23.5
+          cache-dependency-path: "library/core/go.sum"
+      - name: Setup Go Mobile
+        run: |
+          go install github.com/sagernet/gomobile/cmd/gomobile@v0.1.4
+          go install github.com/sagernet/gomobile/cmd/gobind@v0.1.4
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 21
+          cache: 'gradle'
+      - name: Setup Android NDK
+        # Pin NDK version for `gomobile`.
+        # For `libtermux.so`, NDK version is defined in `library/termux/terminal-emulator/build.gradle.kts`. Always keep them identical.
+        id: setup-ndk
+        uses: nttld/setup-ndk@v1
+        with:
+          ndk-version: r27c
+      - name: Native Build
+        env:
+          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
+        run: |
+          ./run lib core
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          path: app/libs/libcore.aar
+          name: "LibCore"
+      - name: Gradle Cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.gradle
+          key: gradle-${{ hashFiles('**/*.gradle.kts') }}
+      - name: Gradle Build
+        run: |
+          echo "sdk.dir=${ANDROID_HOME}" > local.properties
+          export LOCAL_PROPERTIES="${{ secrets.LOCAL_PROPERTIES }}"
+          ./gradlew :app:downloadAssets
+          ./gradlew :app:assembleOssRelease
+          APK=$(find app/build/outputs/apk -name '*.apk')
+          APK=$(dirname "$APK")
+          echo "APK=$APK" >> $GITHUB_ENV
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: APKs
+          path: ${{ env.APK }}
