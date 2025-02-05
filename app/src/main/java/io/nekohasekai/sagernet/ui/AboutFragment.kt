@@ -188,7 +188,7 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                     .build())
                 .addCard(MaterialAboutCard.Builder()
                     .outline(false)
-                    .title(R.string.menu_tools)
+                    .title(R.string.about_tools)
                     .apply {
                         val ctx = app
                         val (subTextRes, shouldEnable) = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
