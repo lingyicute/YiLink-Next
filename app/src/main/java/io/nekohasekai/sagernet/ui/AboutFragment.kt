@@ -115,6 +115,7 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
             return MaterialAboutList.Builder()
                 .addCard(MaterialAboutCard.Builder()
                     .outline(false)
+                    .title(R.string.app_version)
                     .addItem(MaterialAboutActionItem.Builder()
                         .icon(R.drawable.ic_deploy)
                         .text(R.string.app_version)
@@ -161,26 +162,6 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                             }
                         }
                     }
-                    .apply {
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                            val pm = app.getSystemService(Context.POWER_SERVICE) as PowerManager
-                            if (!pm.isIgnoringBatteryOptimizations(app.packageName)) {
-                                addItem(MaterialAboutActionItem.Builder()
-                                    .icon(R.drawable.ic_baseline_running_with_errors_24)
-                                    .text(R.string.ignore_battery_optimizations)
-                                    .subText(R.string.ignore_battery_optimizations_sum)
-                                    .setOnClickAction {
-                                        requestIgnoreBatteryOptimizations.launch(
-                                            Intent(
-                                                Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS,
-                                                Uri.parse("package:${app.packageName}")
-                                            )
-                                        )
-                                    }
-                                    .build())
-                            }
-                        }
-                    }
                     .build())
                 .addCard(MaterialAboutCard.Builder()
                     .outline(false)
@@ -205,7 +186,39 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                         }
                         .build())
                     .build())
-                .build()
+                .addCard(MaterialAboutCard.Builder()
+                    .outline(false)
+                    .title(R.string.menu_tools)
+                    .apply {
+                        val ctx = app
+                        val (subTextRes, shouldEnable) = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                            val pm = ctx.getSystemService(Context.POWER_SERVICE) as PowerManager
+                            val isIgnoring = pm.isIgnoringBatteryOptimizations(ctx.packageName)
+                            Pair(
+                                if (isIgnoring) R.string.no_action_needed else R.string.ignore_battery_optimizations_sum,
+                                !isIgnoring
+                            )
+                        } else {
+                            Pair(R.string.no_action_needed, false)
+                        }
+    
+                        addItem(MaterialAboutActionItem.Builder()
+                            .icon(R.drawable.ic_baseline_running_with_errors_24)
+                            .text(R.string.ignore_battery_optimizations)
+                            .subText(subTextRes)
+                            .setOnClickAction {
+                                if (shouldEnable) {
+                                    requestIgnoreBatteryOptimizations.launch(
+                                        Intent(
+                                            Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS,
+                                            Uri.parse("package:${ctx.packageName}")
+                                        )
+                                    )
+                                }
+                            }
+                            .build())
+                    }
+                    .build()
         }
 
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
