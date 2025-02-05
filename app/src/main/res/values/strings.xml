@@ -565,6 +565,4 @@
     <string name="bootstrap_dns_sum">If the address of direct DNS is a domain name and "resolve destination" is enabled, use bootstrap DNS to resolve it. Please input a DNS server with IP address or with "+local".</string>
     <string name="more">More</string>
     <string name="no_action_needed">无需进行此操作</string>
-    <string name="ignore_battery_optimizations">忽略电池优化</string>
-    <string name="ignore_battery_optimizations_sum">请允许应用在后台运行</string>
 </resources>
