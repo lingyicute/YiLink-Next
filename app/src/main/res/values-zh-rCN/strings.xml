@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_desc">适用于 Android 之通用代理工具，使用 Kotlin 编写。</string>
+    <string name="app_desc">Android 平台上的多合一代理工具，简单而强大。\nMade with love ♥️</string>
     <string name="project">项目</string>
     <string name="github">源代码</string>
     <string name="app_version">版本</string>
@@ -170,7 +170,7 @@
     <string name="alpn">ALPN</string>
     <string name="group_duplicate">重复：
 \n%s</string>
-    <string name="deduplication">去重</string>
+    <string name="deduplication">清理重复的配置</string>
     <string name="version_x">版本 (%s)</string>
     <string name="version_core">内核版本</string>
     <string name="ss_cat">Shadowsocks 设置</string>
@@ -390,10 +390,9 @@
     <string name="stun_attest_loading">这可能需要几分钟的时间……</string>
     <string name="route_play_store">%s境内 Google API 流转规则</string>
     <string name="naive_insecure_concurrency">不安全并发</string>
-    <string name="naive_insecure_concurrency_summary">\n
-使用 N 个并发的隧道连接，能在恶劣的网络条件下降低丢包率，但是并发连接使隧道更容易被发现，降低了安全性。虽然如此……但是这样违背了 YiLink 对抗当局流量分析的初衷。
+    <string name="naive_insecure_concurrency_summary">使用 N 个并发的隧道连接\n\n此功能可以在恶劣的网络条件下降低丢包率。虽说如此，但并发连接使隧道更容易被发现，降低了安全性。这违背了 YiLink 对抗当局流量分析的初衷。
 \n
-\n如果一定要使用它，先试试 N=2 吧，看看有没有效果。无论如何，梨强烈建议你不要使用超过 4 个并发连接。</string>
+\n如果一定要使用它，先试试 N=2 吧，看看有没有效果。无论如何，梨都强烈建议你不要使用超过 4 个并发连接。</string>
     <string name="route_ssid">Wi-Fi SSID</string>
     <string name="missing_permission">缺少权限</string>
     <string name="location_disabled">位置已禁用</string>

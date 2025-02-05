@@ -116,7 +116,7 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                 .addCard(MaterialAboutCard.Builder()
                     .outline(false)
                     .addItem(MaterialAboutActionItem.Builder()
-                        .icon(R.drawable.ic_baseline_update_24)
+                        .icon(R.drawable.ic_deploy)
                         .text(R.string.app_version)
                         .subText(BuildConfig.VERSION_NAME)
                         .setOnClickAction {
