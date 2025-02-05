@@ -51,7 +51,7 @@
 \n直连：%3$s↑ %4$s↓</string>
     <string name="speed">%s/s</string>
     <string name="connection_test_testing">测试中……</string>
-    <string name="connection_test_available">连接成功：HTTPS 握手耗时 %d ms</string>
+    <string name="connection_test_available">连接成功！HTTPS 握手耗时 %d ms～</string>
     <string name="connection_test_error">失败：%s</string>
     <!-- proxy category -->
     <string name="profile_name">配置名称</string>
@@ -76,7 +76,7 @@
     <string name="metered_summary">让系统认为此 VPN 按流量计费</string>
     <string name="menu_route">路由</string>
     <string name="proxied_apps">分应用 VPN</string>
-    <string name="proxied_apps_summary">代理所选应用的流量</string>
+    <string name="proxied_apps_summary">代理或绕过所选应用的流量</string>
     <string name="off">关闭</string>
     <string name="search_apps">搜索……</string>
     <string name="scanning">扫描中……</string>
@@ -89,7 +89,7 @@
     <!-- notification category -->
     <string name="service_vpn">VPN 服务</string>
     <string name="service_proxy">代理服务</string>
-    <string name="forward_success">代理已启动。</string>
+    <string name="forward_success">代理已启动～</string>
     <string name="invalid_server">无效的服务器地址</string>
     <string name="service_failed">失败：</string>
     <string name="stop">停止</string>
@@ -288,7 +288,7 @@
     <string name="profile_requiring_plugin">配置 %s 需要插件 %s，但找不到。</string>
     <string name="ooc_subscription_token_invalid">无效的 OOCv1 令牌</string>
     <string name="ooc_warning">警告</string>
-    <string name="ooc_missing_protocol">该订阅要求 %s 协议支持，但找不到。不支持的配置将被忽略。</string>
+    <string name="ooc_missing_protocol">该订阅要求 %s 协议支持，但找不到所需的插件。不支持的配置将被忽略。</string>
     <string name="service_subscription">订阅更新服务</string>
     <string name="subscription_update">订阅更新</string>
     <string name="subscription_update_message">正在更新 %s……</string>
@@ -302,7 +302,7 @@
     <string name="subscription_used">已用 %s</string>
     <string name="subscription_traffic">已用 %s / 剩余 %s</string>
     <string name="subscription_import">导入订阅</string>
-    <string name="subscription_import_message">确认要导入订阅 %s？如果来源不可信，你的 IP 和行为将被泄露。</string>
+    <string name="subscription_import_message">确定要导入订阅 %s 吗？不怀好意的节点可能会泄露你的 IP 和 DNS 查询。</string>
     <string name="profile_import">导入配置</string>
     <string name="profile_import_message">确认要导入配置 %s？</string>
     <string name="no_proxies_found_in_subscription">未在此订阅内找到服务器配置</string>
@@ -341,11 +341,11 @@
     <string name="experimental_authenticated_length">让每个有效载荷段的长度不再具有可塑性。这个实验要求服务器和客户端使用相同版本的 v2ray-core。预计会有更多关于这个实验的破坏性更新。</string>
     <string name="menu_traffic">流量</string>
     <string name="route_for">%s 规则</string>
-    <string name="app_no_launcher">该应用没有界面。</string>
+    <string name="app_no_launcher">此 App 没有可启动的 Activity。</string>
     <string name="copy_failed">复制失败。</string>
     <string name="copy_success">复制成功！</string>
     <string name="create_rule">创建路由</string>
-    <string name="open_market">打开应用市场</string>
+    <string name="open_market">在系统默认的应用市场里查看</string>
     <string name="open_settings">打开设置</string>
     <string name="open_app">打开应用</string>
     <string name="copy_package_name">复制包名</string>
@@ -357,7 +357,7 @@
     <string name="traffic_active">活动</string>
     <string name="route_need_vpn">路由规则 %s 依赖 VPN 以生效，所以其已被忽略。</string>
     <string name="no_statistics">暂无数据</string>
-    <string name="traffic_statistics_summary">可能增加电量使用</string>
+    <string name="traffic_statistics_summary">可能会有些耗电</string>
     <string name="ssh_private_key_passphrase">私钥密码句</string>
     <string name="ssh_private_key">私钥</string>
     <string name="ssh_public_key">公钥</string>
@@ -374,20 +374,20 @@
     <string name="destination_override">覆盖目标地址</string>
     <string name="tun_implementation">TUN 实现</string>
     <string name="profile_traffic_statistics_summary">关闭此项会禁用流量统计</string>
-    <string name="app_statistics_disabled">应用流量统计已禁用</string>
+    <string name="app_statistics_disabled">App 流量统计已禁用</string>
     <string name="enable_pcap">启用 PCAP</string>
     <string name="pcap_summary">保存流量到 .pcap 文件</string>
     <string name="pcap_notice">Pcap 文件将被保存到 %s</string>
-    <string name="app_traffic_statistics">应用流量统计</string>
-    <string name="profile_traffic_statistics">配置流量统计</string>
+    <string name="app_traffic_statistics">精确到 App 的流量统计</string>
+    <string name="profile_traffic_statistics">流量统计</string>
     <string name="group_filter_owners">拥有者</string>
     <string name="group_filter_owners_nf">该订阅中没有拥有者</string>
     <string name="stun_test_summary">根据 RFC 5780 的定义，使用 STUN 探测客户端的 NAT 映射行为和 NAT 过滤行为。</string>
     <string name="nat_mapping_behaviour">NAT 映射行为</string>
     <string name="nat_filtering_behaviour">NAT 过滤行为</string>
-    <string name="stun_test">NAT 行为发现</string>
+    <string name="stun_test">NAT 行为探测</string>
     <string name="start">开始</string>
-    <string name="stun_attest_loading">这可能需要几分钟的时间……</string>
+    <string name="stun_attest_loading">正在执行测试</string>
     <string name="route_play_store">%s境内 Google API 流转规则</string>
     <string name="naive_insecure_concurrency">不安全并发</string>
     <string name="naive_insecure_concurrency_summary">使用 N 个并发的隧道连接\n\n此功能可以在恶劣的网络条件下降低丢包率。虽说如此，但并发连接使隧道更容易被发现，降低了安全性。这违背了 YiLink 对抗当局流量分析的初衷。
