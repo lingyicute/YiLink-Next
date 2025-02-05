@@ -66,3 +66,13 @@ jobs:
         with:
           name: APKs
           path: 'app/build/outputs/apk/oss/release/'
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: APK Arm64
+          path: 'app/build/outputs/apk/oss/release/*arm64*.apk'
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: APK Armv7
+          path: 'app/build/outputs/apk/oss/release/*armeabi*.apk'
