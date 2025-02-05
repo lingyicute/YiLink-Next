@@ -188,7 +188,7 @@
     <string name="route_profile">选择配置……</string>
     <string name="empty_route">空路由</string>
     <string name="empty_route_notice">在保存前设置一些规则！</string>
-    <string name="route_warn">在添加自定义规则之前，记得去看看文档（或者问问梨），否则可能会导致不可预期的事情哦。</string>
+    <string name="route_warn">在添加自定义规则之前，记得去看看 v2fly 官网上的相关文档（点此即可跳转）\n\n当然啦，也可以去问问你的梨～</string>
     <string name="route_bypass_domain">%s境内域名流转规则</string>
     <string name="route_bypass_ip">%s境内 IP 流转规则</string>
     <string name="no_proxies_found_in_file">未在此文件内找到服务器配置</string>
@@ -473,7 +473,7 @@
     <string name="juicity_congestion_control">拥塞控制</string>
     <string name="nat_type">NAT 类型</string>
     <string name="stun_legacy_test">NAT 类型测试</string>
-    <string name="stun_legacy_test_summary"根据 RFC 3489 的定义，使用 STUN 确定客户端 NAT 类型。</string>
+    <string name="stun_legacy_test_summary">根据 RFC 3489 的定义，使用 STUN 确定客户端 NAT 类型。</string>
     <string name="nat_external_address">外部地址</string>
     <string name="subscription_expire">过期：%s</string>
     <string name="show_group_name_in_notification">在通知中显示分组名称</string>
