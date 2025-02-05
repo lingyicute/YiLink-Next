@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="YiLink"
-        android:textSize="60sp"
+        android:textSize="51sp"
         android:textColor="?colorOnPrimary"
         android:fontFamily="@font/yilink" />
 
