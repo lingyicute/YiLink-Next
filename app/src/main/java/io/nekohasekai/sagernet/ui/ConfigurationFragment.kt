@@ -826,7 +826,6 @@ class ConfigurationFragment @JvmOverloads constructor(
                 }
             }
         }
-
     }
 
     suspend fun stopService() {
