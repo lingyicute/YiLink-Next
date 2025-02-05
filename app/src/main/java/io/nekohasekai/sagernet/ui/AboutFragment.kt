@@ -218,7 +218,7 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                             }
                             .build())
                     }
-                    .build()
+                    .build())
         }
 
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
