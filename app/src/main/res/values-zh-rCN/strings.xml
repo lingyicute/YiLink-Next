@@ -117,7 +117,7 @@
     <!-- profile -->
     <string name="profile_config">服务器配置</string>
     <string name="delete">删除</string>
-    <string name="delete_confirm_prompt">你确定要删除这个服务器配置吗？</string>
+    <string name="delete_confirm_prompt">你确定要删除这些服务器配置吗？</string>
     <string name="share_qr_nfc">二维码</string>
     <string name="add_profile_methods_scan_qr_code">扫描二维码</string>
     <string name="add_profile_methods_manual_settings">手动输入</string>
@@ -188,7 +188,7 @@
     <string name="route_profile">选择配置……</string>
     <string name="empty_route">空路由</string>
     <string name="empty_route_notice">在保存前设置一些规则！</string>
-    <string name="route_warn">在添加自定义规则之前，记得去看看 v2fly 官网上的相关文档（点此即可跳转）\n\n当然啦，也可以去问问你的梨～</string>
+    <string name="route_warn">在添加或修改自定义规则之前，记得去看看 v2fly 官网上的相关文档（点击这里即可跳转）\n\n当然啦，也可以去问问你的梨～</string>
     <string name="route_bypass_domain">%s境内域名流转规则</string>
     <string name="route_bypass_ip">%s境内 IP 流转规则</string>
     <string name="no_proxies_found_in_file">未在此文件内找到服务器配置</string>
