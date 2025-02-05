@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_desc">Android 平台上的多合一代理工具，简单而强大。\nMade with love ♥️</string>
+    <string name="app_desc">Android 多合一代理工具，简简单单却不失强大。\n\nMade with LOVE ♥️</string>
     <string name="project">项目</string>
     <string name="github">源代码</string>
     <string name="app_version">版本</string>
@@ -22,7 +22,7 @@
     <string name="group_status_proxies_subscription">%d 个配置 | 更新于 %s</string>
     <string name="group_no_difference">%s：没有变化</string>
     <string name="group_updated">%s：更新了 %d 个节点</string>
-    <string name="group_delete_confirm_prompt">您确定要删除这个分组吗？</string>
+    <string name="group_delete_confirm_prompt">你确定要删除这个分组吗？</string>
     <string name="group_added">新增：
 \n%s</string>
     <string name="group_changed">更新：
@@ -95,7 +95,7 @@
     <string name="stop">停止</string>
     <string name="stopping">正在停止……</string>
     <string name="vpn_permission_denied">VPN 服务权限请求被拒绝</string>
-    <string name="reboot_required">无法启动 VPN 服务，您可能需要重启您的设备。</string>
+    <string name="reboot_required">无法启动 VPN 服务，你可能需要重启你的设备。</string>
     <!-- alert category -->
     <string name="profile_empty">请选择一个服务器配置</string>
     <string name="connect">连接</string>
@@ -117,7 +117,7 @@
     <!-- profile -->
     <string name="profile_config">服务器配置</string>
     <string name="delete">删除</string>
-    <string name="delete_confirm_prompt">您确定要删除这个服务器配置吗？</string>
+    <string name="delete_confirm_prompt">你确定要删除这个服务器配置吗？</string>
     <string name="share_qr_nfc">二维码</string>
     <string name="add_profile_methods_scan_qr_code">扫描二维码</string>
     <string name="add_profile_methods_manual_settings">手动输入</string>
@@ -183,7 +183,7 @@
     <string name="circular_reference_sum">路由中不可以包含自己。</string>
     <string name="mux_sum">Mux 是为了减少 TCP 的握手延迟而设计的，而非提高连接的吞吐量，用于看视频、下载文件或者测速通常只会有反效果。</string>
     <string name="route_add">新建路由规则</string>
-    <string name="delete_route_prompt">您确定要移除此路由吗？</string>
+    <string name="delete_route_prompt">你确定要移除此路由吗？</string>
     <string name="route_name">路由名称</string>
     <string name="route_profile">选择配置……</string>
     <string name="empty_route">空路由</string>
@@ -195,7 +195,7 @@
     <string name="no_proxies_found_in_clipboard">未在剪贴板内找到服务器配置</string>
     <string name="route_reset">重置</string>
     <string name="clear_profiles">清空</string>
-    <string name="file_manager_missing">您的设备缺少 Android 标准文件选择器，请安装一个，如质感文件。</string>
+    <string name="file_manager_missing">你的设备缺少 Android 标准文件选择器，请安装一个，如质感文件。</string>
     <string name="restart">重载代理服务以应用修改</string>
     <string name="theme">主题</string>
     <string name="liweb">梨の主页</string>
@@ -272,7 +272,7 @@
     <string name="subscription_settings">订阅设置</string>
     <string name="group_type">分组类型</string>
     <string name="subscription_type">订阅类型</string>
-    <string name="delete_group_prompt">您确定要删除该分组吗？</string>
+    <string name="delete_group_prompt">你确定要删除该分组吗？</string>
     <string name="force_resolve">强制解析</string>
     <string name="force_resolve_sum">更新时解析所有域名到 IP 地址。如果可能，主机与 SNI 将被自动附加。</string>
     <string name="deduplication_sum">更新时移除重复配置</string>
@@ -292,22 +292,22 @@
     <string name="service_subscription">订阅更新服务</string>
     <string name="subscription_update">订阅更新</string>
     <string name="subscription_update_message">正在更新 %s……</string>
-    <string name="update_subscription_warning">代理未连接，您确定要继续更新吗？</string>
+    <string name="update_subscription_warning">代理未连接，你确定要继续更新吗？</string>
     <string name="group_filter">筛选</string>
     <string name="group_filter_groups">组</string>
     <string name="group_filter_tags">标签</string>
     <string name="group_filter_groups_nf">该订阅中没有分组</string>
     <string name="group_filter_tags_nf">该订阅中没有标签</string>
-    <string name="group_filter_ns">您需要一个 OOCv1 订阅以使用筛选功能</string>
+    <string name="group_filter_ns">你需要一个 OOCv1 订阅以使用筛选功能</string>
     <string name="subscription_used">已用 %s</string>
     <string name="subscription_traffic">已用 %s / 剩余 %s</string>
     <string name="subscription_import">导入订阅</string>
-    <string name="subscription_import_message">确认要导入订阅 %s？如果来源不可信，您的 IP 和行为将被泄露。</string>
+    <string name="subscription_import_message">确认要导入订阅 %s？如果来源不可信，你的 IP 和行为将被泄露。</string>
     <string name="profile_import">导入配置</string>
     <string name="profile_import_message">确认要导入配置 %s？</string>
     <string name="no_proxies_found_in_subscription">未在此订阅内找到服务器配置</string>
     <string name="action_export">导出</string>
-    <string name="clear_profiles_message">您确定要清空该分组吗？</string>
+    <string name="clear_profiles_message">你确定要清空该分组吗？</string>
     <string name="remote_dns">远程 DNS</string>
     <string name="direct_dns">直连 DNS</string>
     <string name="enable_dns_routing">启用 DNS 路由</string>
@@ -382,7 +382,7 @@
     <string name="profile_traffic_statistics">配置流量统计</string>
     <string name="group_filter_owners">拥有者</string>
     <string name="group_filter_owners_nf">该订阅中没有拥有者</string>
-    <string name="stun_test_summary">使用 STUN 发现客户端的 RFC 5780 中定义的 NAT 映射行为和 NAT 过滤行为。</string>
+    <string name="stun_test_summary">根据 RFC 5780 的定义，使用 STUN 探测客户端的 NAT 映射行为和 NAT 过滤行为。</string>
     <string name="nat_mapping_behaviour">NAT 映射行为</string>
     <string name="nat_filtering_behaviour">NAT 过滤行为</string>
     <string name="stun_test">NAT 行为发现</string>
@@ -408,9 +408,9 @@
     <string name="backup_import">导入</string>
     <string name="use_local_dns_as_direct_dns">使用系统 DNS 作为直连 DNS</string>
     <string name="backup_settings">设置</string>
-    <string name="backup_summary">如果路由规则不与配置一起备份，则自定义出站将丢失。</string>
+    <string name="backup_summary">小提示：如果不备份路由规则，你的自定义出站可能会丢失哦。</string>
     <string name="backup_rules">路由规则</string>
-    <string name="backup_not_file">不是备份文件，预期 .json，但 %s</string>
+    <string name="backup_not_file">错误：备份文件的预期格式为 .json，但你选择的是 %s</string>
     <string name="invalid_backup_file">无效的备份文件</string>
     <string name="backup_import_summary">导入将覆盖现有的数据。</string>
     <string name="backup_importing">正在导入……</string>
@@ -447,7 +447,7 @@
     <string name="route_need_location_enabled">路由规则`%s`需要获取你的**Wi-Fi SSID**，但这需要**开启位置信息**</string>
     <string name="route_need_background_location">路由规则`%s`需要获取你的**Wi-Fi SSID**，但这需要**后台位置信息权限**</string>
     <string name="route_need_fine_location">路由规则`%s`需要获取你的**Wi-Fi SSID**，但这需要**确切位置信息权限**</string>
-    <string name="route_need_coarse_location">路由规则`%s`需要获取你的**Wi-Fi SSID**，但这需要**大概位置信息权限**</string>
+    <string name="route_need_coarse_location">路由规则`%s`需要获取你的**Wi-Fi SSID**，但这需要**模糊位置信息权限**</string>
     <string name="tuic_zero_rtt_handshake">0-RTT 握手</string>
     <string name="reality_public_key">REALITY 公钥</string>
     <string name="reality_short_id">REALITY Short ID</string>
@@ -473,7 +473,7 @@
     <string name="juicity_congestion_control">拥塞控制</string>
     <string name="nat_type">NAT 类型</string>
     <string name="stun_legacy_test">NAT 类型测试</string>
-    <string name="stun_legacy_test_summary">使用 STUN 确定客户端的 RFC 3489 中定义的 NAT 类型。</string>
+    <string name="stun_legacy_test_summary"根据 RFC 3489 的定义，使用 STUN 确定客户端 NAT 类型。</string>
     <string name="nat_external_address">外部地址</string>
     <string name="subscription_expire">过期：%s</string>
     <string name="show_group_name_in_notification">在通知中显示分组名称</string>
@@ -492,7 +492,7 @@
     <string name="hysteria_enable_port_hopping_experimental">启用 Hysteria 端口跳跃（实验性）</string>
     <string name="hysteria_enable_port_hopping_sum">这与链式代理不兼容。如果禁用，端口跳跃范围内的一个随机端口将会被使用。</string>
     <string name="enable_fragment">启用 TLS Client Hello 分片</string>
-    <string name="enable_fragment_sum">emmm，此选项或许有助于规避 SNI 审查，但目前还不稳定。</string>
+    <string name="enable_fragment_sum">此选项或许有助于规避 SNI 审查，但目前还不稳定。</string>
     <string name="fragment_length">分片长度</string>
     <string name="fragment_interval">分片间隔</string>
     <string name="enable_fragment_for_direct">为直连也启用分片</string>
@@ -521,7 +521,7 @@
     <string name="route_asset_reserved_filename">文件名不能为 %s</string>
     <string name="route_asset_duplicate_filename">文件名为 %s 的数据库已经存在</string>
     <string name="route_asset_invalid_url">无效的 URL：%s</string>
-    <string name="route_asset_delete_prompt">您确定要删除这个数据库吗？</string>
+    <string name="route_asset_delete_prompt">你确定要删除这个数据库吗？</string>
     <string name="route_asset_name">数据库名称</string>
     <string name="route_asset_url">数据库 URL</string>
     <string name="route_asset_settings">数据库设置</string>

@@ -245,21 +245,4 @@ object ProfileManager {
         }
         return rules
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
