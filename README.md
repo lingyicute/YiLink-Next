@@ -1,22 +1,22 @@
-# YiLink
+# YiLink Next
 
-A fork of SagerNet, the universal proxy toolchain for Android written in Kotlin.
+[![API](https://img.shields.io/badge/API-21%2B-yellow.svg?style=flat)](https://developer.android.com/about/versions/lollipop)
+[![Github License](https://img.shields.io/github/license/lingyicute/YiLink-Next?color=%2364f573&style=flat)](https://github.com/lingyicute/YiLink-Next/blob/master/COPYING)
+![GitHub Created At](https://img.shields.io/github/created-at/lingyicute/YiLink-Next)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/lingyicute/YiLink-Next)
 
-## Download
+### Android 多合一代理工具，简简单单却不失强大。
+
+### Made with LOVE ♥️
+
+## Download 下载
 
   [<img src="images/get-it-on-github.png" alt="Get it on GitHub" height="80">](https://github.com/lingyicute/YiLink-Next/releases)
 
-- [NaiveProxy plugin](https://github.com/klzgrad/naiveproxy)
-
-- [Mieru plugin](https://github.com/enfein/NekoBoxPlugins)
-
-## FAQs
-
-[Wiki](https://github.com/lingyicute/YiLink-Next/wiki).
 
 ## 🗂️ License
 
-YiLink is released under the GNU General Public License v3.0 (GPLv3).
+YiLink Next is released under the GNU General Public License v3.0 (GPLv3).
 
 Copyright (C) 2025 lingyicute.
 
