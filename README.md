@@ -5,9 +5,9 @@
 ![GitHub Created At](https://img.shields.io/github/created-at/lingyicute/YiLink-Next)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/lingyicute/YiLink-Next)
 
-### Android 多合一代理工具，简简单单却不失强大。
+Android 多合一代理工具，简简单单却不失强大。
 
-### Made with LOVE ♥️
+Made with LOVE ♥️
 
 ## Download 下载
 
