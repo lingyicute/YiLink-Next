@@ -171,7 +171,7 @@
     <string name="group_duplicate">重复：
 \n%s</string>
     <string name="deduplication">清理重复的配置</string>
-    <string name="version_x">版本 (%s)</string>
+    <string name="version_x">插件版本 (%s)</string>
     <string name="version_core">内核版本</string>
     <string name="ss_cat">Shadowsocks 设置</string>
     <string name="show_direct_speed">显示直连速度</string>
@@ -408,11 +408,11 @@
     <string name="backup_import">导入</string>
     <string name="use_local_dns_as_direct_dns">使用系统 DNS 作为直连 DNS</string>
     <string name="backup_settings">设置</string>
-    <string name="backup_summary">小提示：如果不备份路由规则，你的自定义出站可能会丢失哦。</string>
+    <string name="backup_summary">Tip：如果不备份路由规则，你的自定义出站可能会丢失哦。</string>
     <string name="backup_rules">路由规则</string>
     <string name="backup_not_file">错误：备份文件的预期格式为 .json，但你选择的是 %s</string>
     <string name="invalid_backup_file">无效的备份文件</string>
-    <string name="backup_import_summary">导入将覆盖现有的数据。</string>
+    <string name="backup_import_summary">导入将覆盖现有的数据。你确定吗？</string>
     <string name="backup_importing">正在导入……</string>
     <string name="tasker_settings">Tasker 设置</string>
     <string name="tasker_action_start_service">启动服务</string>

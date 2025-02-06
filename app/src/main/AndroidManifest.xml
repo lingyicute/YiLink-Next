@@ -105,7 +105,7 @@
 
                 <data
                     android:host="subscription"
-                    android:scheme="exclave" />
+                    android:scheme="yilink" />
                 <data
                     android:host="subscription"
                     android:scheme="sn" />
@@ -118,7 +118,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="exclave" />
+                <data android:scheme="yilink" />
                 <data android:scheme="ss" />
                 <data android:scheme="ssr" />
                 <data android:scheme="socks" />
