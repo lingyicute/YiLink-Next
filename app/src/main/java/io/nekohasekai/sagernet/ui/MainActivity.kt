@@ -151,7 +151,7 @@ class MainActivity : ThemedActivity(),
         val uri = intent.data ?: return
 
         runOnDefaultDispatcher {
-            if ((uri.scheme == "exclave" || uri.scheme == "sn") && uri.host == "subscription") {
+            if ((uri.scheme == "yilink" || uri.scheme == "sn") && uri.host == "subscription") {
                 importSubscription(uri)
             } else {
                 importProfile(uri)
@@ -188,7 +188,7 @@ class MainActivity : ThemedActivity(),
 
         } else {
             // private binary format derived from SagerNet
-            if (uri.scheme != "exclave") {
+            if (uri.scheme != "yilink") {
                 // do not be compatible with the private binary format from other software
                 return
             }

@@ -61,11 +61,11 @@ fun parseProxies(text: String): List<AbstractBean> {
     val entitiesByLine = ArrayList<AbstractBean>()
 
     fun String.parseLink(entities: ArrayList<AbstractBean>) {
-        if (startsWith("exclave://subscription?") || startsWith("sn://subscription?")) {
+        if (startsWith("yilink://subscription?") || startsWith("sn://subscription?")) {
             throw SubscriptionFoundException(this)
         }
 
-        if (startsWith("exclave://")) {
+        if (startsWith("yilink://")) {
             Logs.d("Try parse universal link: $this")
             runCatching {
                 entities.add(parseBackupLink(this))

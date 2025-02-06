@@ -27,12 +27,12 @@ import io.nekohasekai.sagernet.database.ProxyGroup
 
 fun parseBackupLink(link: String): AbstractBean {
     return if (link.contains("?")) {
-        val type = link.substringAfter("exclave://").substringBefore("?")
+        val type = link.substringAfter("yilink://").substringBefore("?")
         ProxyEntity(type = TypeMap[type] ?: error("Type $type not found")).apply {
             putByteArray(ZipUtil.unZlib(Base64Decoder.decode(link.substringAfter("?"))))
         }.requireBean()
     } else {
-        val type = link.substringAfter("exclave://").substringBefore(":")
+        val type = link.substringAfter("yilink://").substringBefore(":")
         ProxyEntity(type = TypeMap[type] ?: error("Type $type not found")).apply {
             putByteArray(Base64Decoder.decode(link.substringAfter(":").substringAfter(":")))
         }.requireBean()
@@ -40,7 +40,7 @@ fun parseBackupLink(link: String): AbstractBean {
 }
 
 fun AbstractBean.exportBackup(): String {
-    var link = "exclave://"
+    var link = "yilink://"
     link += TypeMap.reversed[ProxyEntity().putBean(this).type]
     link += "?"
     link += Base64Encoder.encodeUrlSafe(ZipUtil.zlib(KryoConverters.serialize(this), 9))
@@ -49,7 +49,7 @@ fun AbstractBean.exportBackup(): String {
 
 
 fun ProxyGroup.exportBackup(): String {
-    var link = "exclave://subscription?"
+    var link = "yilink://subscription?"
     export = true
     link += Base64Encoder.encodeUrlSafe(ZipUtil.zlib(KryoConverters.serialize(this), 9))
     export = false
